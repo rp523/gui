@@ -12,7 +12,7 @@ def main():
                     [sg.Text("１行目")],
                     [sg.Text("２行目、文字入力"), sg.InputText(key = "SetValueKey")],
                     [sg.Text("３行目、ファイルブラウズ"), sg.InputText(), sg.FileBrowse("ファイルを選択", key = "FileBrouseKey")],
-                    [sg.Text("４行目、コンボボックス"), sg.Combo(("アイテムA", "アイテムB"), default_value = "アイテムA", key = "ComboBoxKey")],
+                    [sg.Text("４行目、コンボボックス"), sg.Combo(("アイテムA", "アイテムB"), default_value = "アイテムA", key = "ComboBoxKey", size = (10, 1))],
                     [sg.Button(OK_TEXT), sg.Button(CANCEL_TEXT)]
                 ]
     
